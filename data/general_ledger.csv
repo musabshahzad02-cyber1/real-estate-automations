@@ -1,0 +1,11 @@
+date,property,account,payee,amount,ref
+2026-10-01,Maple Court,Rent Income,Dana Reyes,1250.00,DEP-2201
+2026-10-02,Elm Street Duplex,Rent Income,Tom Walsh,1400.00,DEP-2202
+2026-10-03,Maple Court,Rent Income,Luis Ortega,600.00,DEP-2203
+2026-10-07,Riverside Lofts,Rent Income,Marcus Bell,1650.00,DEP-2204
+2026-10-08,Maple Court,Repairs & Maintenance,Rapid Rooter Plumbing,-385.00,CHK-5101
+2026-10-09,Elm Street Duplex,Rent Income,Home Depot,-142.37,CHK-5102
+2026-10-11,Elm Street Duplex,Repairs & Maintenance,Northside HVAC,-260.00,CHK-5103
+2026-10-12,Elm Street Duplex,Repairs & Maintenance,Northside HVAC,-260.00,CHK-5104
+2026-10-14,Riverside Lofts,Pest Control,Guardian Pest,-120.00,CHK-5105
+2026-10-15,Maple Court,Utilities,City Water Department,-410.25,ACH-7701

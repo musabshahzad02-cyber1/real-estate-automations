@@ -1,0 +1,8 @@
+id,property,unit,tenant,trade,priority,vendor,newly_assigned,days_since_update,needs_follow_up
+WO-1041,Maple Court,2B,Dana Reyes,plumbing,emergency,Rapid Rooter Plumbing,yes,1,yes
+WO-1046,Elm Street Duplex,A,Tom Walsh,plumbing,emergency,Rapid Rooter Plumbing,yes,0,yes
+WO-1042,Maple Court,4A,Luis Ortega,electrical,urgent,BrightLine Electric,yes,2,yes
+WO-1043,Elm Street Duplex,B,Priya Nair,hvac,urgent,Northside HVAC,no,5,yes
+WO-1045,Riverside Lofts,112,Grace Kim,pest,urgent,Guardian Pest,yes,3,yes
+WO-1044,Riverside Lofts,305,Marcus Bell,appliance,routine,Allied Appliance,no,11,yes
+WO-1047,Maple Court,1C,Ana Silva,general,routine,Handy Pros,no,1,no

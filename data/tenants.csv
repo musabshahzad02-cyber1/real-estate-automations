@@ -1,0 +1,7 @@
+tenant_id,name,property,unit,email,phone,monthly_rent
+T-01,Dana Reyes,Maple Court,2B,dana.reyes@example.com,(815) 555-0201,1250
+T-02,Luis Ortega,Maple Court,4A,luis.ortega@example.com,(815) 555-0202,1175
+T-03,Priya Nair,Elm Street Duplex,B,priya.nair@example.com,(815) 555-0203,1400
+T-04,Marcus Bell,Riverside Lofts,305,marcus.bell@example.com,(815) 555-0204,1650
+T-05,Grace Kim,Riverside Lofts,112,grace.kim@example.com,(815) 555-0205,1325
+T-06,Tom Walsh,Elm Street Duplex,A,tom.walsh@example.com,(815) 555-0206,1400

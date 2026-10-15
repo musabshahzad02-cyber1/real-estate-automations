@@ -1,0 +1,15 @@
+To: office@guardianpest.example
+Subject: New work order: WO-1045 at Riverside Lofts #112
+
+Hi Guardian Pest team,
+
+We have a new urgent pest request for you:
+
+  Saw a couple of mice in the pantry
+  Location: Riverside Lofts, unit 112
+  Tenant: Grace Kim
+
+Please reply with your scheduled date and time, or let us know if anything is holding it up.
+
+Thank you,
+Property Management Team

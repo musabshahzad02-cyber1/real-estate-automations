@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Sarah Mitchell",
+    "email": "sarah.m@example.com",
+    "phone": "+15125550311",
+    "tags": [
+      "buyer",
+      "pre-approved",
+      "source:website-buyer-form"
+    ],
+    "notes": [
+      "Looking to buy a 3 bed home in Round Rock under 450k, pre-approved",
+      "Also interested in Georgetown"
+    ]
+  },
+  {
+    "name": "Jorge Alvarez",
+    "email": "jorge.alvarez@example.com",
+    "phone": "+15125550322",
+    "tags": [
+      "source:home-value-form",
+      "seller"
+    ],
+    "notes": [
+      "Thinking about selling my house in Pflugerville next spring, what is it worth?"
+    ]
+  },
+  {
+    "name": "Nina Park",
+    "email": "nina.park@example.com",
+    "phone": "+15125550344",
+    "tags": [
+      "source:rental-inquiry-form",
+      "renter"
+    ],
+    "notes": [
+      "Do you have any 2 bedroom rentals available in November?"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+RESIDENTIAL PURCHASE AGREEMENT SUMMARY (sample data)
+
+Property: 4127 Bluebonnet Trail, Round Rock, TX 78665
+Buyer: Kevin and Laura Tran (kevin.tran@example.com)
+Seller: Diane Holloway (diane.holloway@example.com)
+Sales Price: $412,500
+Effective Date: October 6, 2026
+
+Earnest Money: $5,000 deposited with title within 3 days after the Effective Date
+Option Period: Option fee $250; option period ends 10 days after the Effective Date
+Survey: Seller delivers existing survey and T-47 affidavit within 7 days after the Effective Date
+Title Commitment: Title company delivers commitment within 20 days after the Effective Date
+Financing Approval: Buyer obtains financing approval within 21 days after the Effective Date
+Closing Date: November 13, 2026
+
+Lender: Hill Country Mortgage, Ben Ortiz (ben.ortiz@hcmortgage.example)
+Title Company: Lone Star Title, Rosa Diaz (rosa.diaz@lonestartitle.example)
+Listing Agent: Carla Nguyen (carla.nguyen@example.com)
+Buyer's Agent: Alex Romero (alex.romero@example.com)

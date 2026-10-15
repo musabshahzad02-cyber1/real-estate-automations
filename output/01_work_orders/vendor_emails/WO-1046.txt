@@ -1,0 +1,15 @@
+To: dispatch@rapidrooter.example
+Subject: EMERGENCY New work order: WO-1046 at Elm Street Duplex #A
+
+Hi Rapid Rooter Plumbing team,
+
+We have a new emergency plumbing request for you:
+
+  I smell gas near the stove
+  Location: Elm Street Duplex, unit A
+  Tenant: Tom Walsh
+
+Please reply with your scheduled date and time, or let us know if anything is holding it up.
+
+Thank you,
+Property Management Team

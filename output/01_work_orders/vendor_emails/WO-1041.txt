@@ -1,0 +1,15 @@
+To: dispatch@rapidrooter.example
+Subject: EMERGENCY New work order: WO-1041 at Maple Court #2B
+
+Hi Rapid Rooter Plumbing team,
+
+We have a new emergency plumbing request for you:
+
+  Water is pouring from under the kitchen sink and the floor is flooding
+  Location: Maple Court, unit 2B
+  Tenant: Dana Reyes
+
+Please reply with your scheduled date and time, or let us know if anything is holding it up.
+
+Thank you,
+Property Management Team

@@ -1,0 +1,15 @@
+To: service@northsidehvac.example
+Subject: Status check: WO-1043 at Elm Street Duplex #B
+
+Hi Northside HVAC team,
+
+Following up on this urgent request, last update was 5 day(s) ago:
+
+  Heat is not coming on, thermostat shows 58 degrees
+  Location: Elm Street Duplex, unit B
+  Tenant: Priya Nair
+
+Please reply with your scheduled date and time, or let us know if anything is holding it up.
+
+Thank you,
+Property Management Team

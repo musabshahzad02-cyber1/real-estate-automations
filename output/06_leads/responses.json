@@ -1,0 +1,95 @@
+[
+  {
+    "status": "new contact",
+    "contact": {
+      "name": "Sarah Mitchell",
+      "email": "sarah.m@example.com",
+      "phone": "+15125550311",
+      "tags": [
+        "buyer",
+        "pre-approved",
+        "source:website-buyer-form"
+      ],
+      "notes": [
+        "Looking to buy a 3 bed home in Round Rock under 450k, pre-approved",
+        "Also interested in Georgetown"
+      ]
+    },
+    "messages": {
+      "sms": "Hi Sarah, thanks for reaching out about buying! I'd love to set up a search that matches what you want. Are you free for a 10-minute call today or tomorrow?",
+      "email": "Hi Sarah, thanks for reaching out about buying! I'd love to set up a search that matches what you want. Are you free for a 10-minute call today or tomorrow?\n\nYou can also book a time that works for you here: [booking link]\n"
+    },
+    "task": {
+      "assignee": "Agent",
+      "due": "within 5 minutes",
+      "title": "Call new lead Sarah Mitchell (buyer, pre-approved)"
+    }
+  },
+  {
+    "status": "new contact",
+    "contact": {
+      "name": "Jorge Alvarez",
+      "email": "jorge.alvarez@example.com",
+      "phone": "+15125550322",
+      "tags": [
+        "source:home-value-form",
+        "seller"
+      ],
+      "notes": [
+        "Thinking about selling my house in Pflugerville next spring, what is it worth?"
+      ]
+    },
+    "messages": {
+      "sms": "Hi Jorge, thanks for reaching out about your home's value! I can put together a free market analysis. What's the best time for a quick call this week?",
+      "email": "Hi Jorge, thanks for reaching out about your home's value! I can put together a free market analysis. What's the best time for a quick call this week?\n\nYou can also book a time that works for you here: [booking link]\n"
+    },
+    "task": {
+      "assignee": "Agent",
+      "due": "within 5 minutes",
+      "title": "Call new lead Jorge Alvarez (seller)"
+    }
+  },
+  {
+    "status": "updated existing contact",
+    "contact": {
+      "name": "Sarah Mitchell",
+      "email": "sarah.m@example.com",
+      "phone": "+15125550311",
+      "tags": [
+        "buyer",
+        "pre-approved",
+        "source:website-buyer-form"
+      ],
+      "notes": [
+        "Looking to buy a 3 bed home in Round Rock under 450k, pre-approved",
+        "Also interested in Georgetown"
+      ]
+    },
+    "messages": null,
+    "task": null
+  },
+  {
+    "status": "new contact",
+    "contact": {
+      "name": "Nina Park",
+      "email": "nina.park@example.com",
+      "phone": "+15125550344",
+      "tags": [
+        "source:rental-inquiry-form",
+        "renter"
+      ],
+      "notes": [
+        "Do you have any 2 bedroom rentals available in November?"
+      ]
+    },
+    "messages": {
+      "sms": "Hi Nina, thanks for your rental inquiry! I'll send over what's available for your move-in date. How many bedrooms and what budget are you working with?",
+      "email": "Hi Nina, thanks for your rental inquiry! I'll send over what's available for your move-in date. How many bedrooms and what budget are you working with?\n\nYou can also book a time that works for you here: [booking link]\n"
+    },
+    "task": {
+      "assignee": "Agent",
+      "due": "within 5 minutes",
+      "title": "Call new lead Nina Park (renter)"
+    }
+  }
+]

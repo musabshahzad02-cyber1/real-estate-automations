@@ -1,0 +1,15 @@
+To: jobs@brightline.example
+Subject: New work order: WO-1042 at Maple Court #4A
+
+Hi BrightLine Electric team,
+
+We have a new urgent electrical request for you:
+
+  Bedroom outlet stopped working, other outlets are fine
+  Location: Maple Court, unit 4A
+  Tenant: Luis Ortega
+
+Please reply with your scheduled date and time, or let us know if anything is holding it up.
+
+Thank you,
+Property Management Team

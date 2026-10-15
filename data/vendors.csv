@@ -1,0 +1,7 @@
+vendor,trade,email,phone,on_call
+Rapid Rooter Plumbing,plumbing,dispatch@rapidrooter.example,(815) 555-0141,yes
+BrightLine Electric,electrical,jobs@brightline.example,(815) 555-0162,yes
+Northside HVAC,hvac,service@northsidehvac.example,(815) 555-0177,yes
+Allied Appliance,appliance,repairs@alliedappliance.example,(815) 555-0119,no
+Guardian Pest,pest,office@guardianpest.example,(815) 555-0133,no
+Handy Pros,general,team@handypros.example,(815) 555-0150,no

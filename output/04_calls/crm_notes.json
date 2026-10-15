@@ -1,0 +1,75 @@
+[
+  {
+    "call_id": "CALL-301",
+    "time": "2026-10-14T22:41:00",
+    "from": "(815) 555-0201",
+    "caller": "Dana Reyes",
+    "unit": "Maple Court #2B",
+    "caller_type": "tenant",
+    "intent": "maintenance emergency",
+    "monthly_income": null,
+    "pets": null,
+    "property_mentioned": "Maple Court",
+    "summary": "Hi, this is Dana in 2B at Maple Court. A pipe under my kitchen sink burst and water is everywhere, it is spreading into the hallway.",
+    "route": "Warm transfer to on-call (815) 555-0100 and text the on-call tech",
+    "task": {
+      "owner": "On-call maintenance",
+      "due": "immediately"
+    }
+  },
+  {
+    "call_id": "CALL-302",
+    "time": "2026-10-15T09:12:00",
+    "from": "(815) 555-0388",
+    "caller": null,
+    "unit": null,
+    "caller_type": "prospect",
+    "intent": "rental inquiry",
+    "monthly_income": 5200,
+    "pets": "cat",
+    "property_mentioned": "Riverside Lofts",
+    "summary": "Hello, I saw your listing for the two bedroom at Riverside Lofts. I make about 5,200 a month, I have one cat, and I want to move in November 1st. Can I see it t",
+    "prequalified": true,
+    "route": "Book a showing and send the application link",
+    "task": {
+      "owner": "Leasing agent",
+      "due": "within 1 hour"
+    }
+  },
+  {
+    "call_id": "CALL-303",
+    "time": "2026-10-15T11:05:00",
+    "from": "(815) 555-0412",
+    "caller": null,
+    "unit": null,
+    "caller_type": "owner",
+    "intent": "owner question",
+    "monthly_income": null,
+    "pets": null,
+    "property_mentioned": "Elm Street Duplex",
+    "summary": "This is Raj Patel, I own the Elm Street Duplex. I wanted to ask when the September owner statement will be sent and why the HVAC repair cost so much.",
+    "route": "Create task for property manager to call the owner back today",
+    "task": {
+      "owner": "Property manager",
+      "due": "today"
+    }
+  },
+  {
+    "call_id": "CALL-304",
+    "time": "2026-10-15T13:30:00",
+    "from": "(815) 555-0203",
+    "caller": "Priya Nair",
+    "unit": "Elm Street Duplex #B",
+    "caller_type": "tenant",
+    "intent": "maintenance follow-up",
+    "monthly_income": null,
+    "pets": null,
+    "property_mentioned": null,
+    "summary": "Hi it's Priya from Elm Street unit B. The heat still is not working and it is getting cold at night. Has the technician been scheduled?",
+    "route": "Log call and check status of the caller's open work order",
+    "task": {
+      "owner": "Maintenance coordinator",
+      "due": "today"
+    }
+  }
+]

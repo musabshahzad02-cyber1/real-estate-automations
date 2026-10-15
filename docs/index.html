@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musab's Automation Workflows</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a portfolio sheet. Short intro, then a two-column grid of workflow cards, each a numbered trigger-to-outcome chain. */
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #56607a;
+  --line: #dde1ea;
+  --brass: #a8781f;
+  --brass-soft: #f3ead7;
+  --navy-soft: #e7ecf6;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1424; --surface: #161e33; --ink: #e8ecf5; --muted: #9aa5bf;
+    --line: #26304a; --brass: #d9a94c; --brass-soft: #2e2715; --navy-soft: #1d2842;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1424; --surface: #161e33; --ink: #e8ecf5; --muted: #9aa5bf;
+  --line: #26304a; --brass: #d9a94c; --brass-soft: #2e2715; --navy-soft: #1d2842;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body);
+  font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 48px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; max-width: 68ch; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(32px, 5vw, 50px); line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+header p { margin: 0; color: var(--muted); font-size: 16px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--mono); font-size: 11.5px; padding: 3px 9px; border-radius: 4px; background: var(--navy-soft); color: var(--ink); }
+.chip.pm { background: var(--brass-soft); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 21px; line-height: 1.2; margin: 0; text-wrap: balance; }
+.problem { margin: 0; color: var(--muted); }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: s; }
+li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 12px; position: relative; padding-bottom: 12px; }
+li:last-child { padding-bottom: 0; }
+li::before {
+  content: counter(s); font-family: var(--mono); font-size: 12px; width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--navy-soft); color: var(--ink); position: relative; z-index: 1;
+}
+li:first-child::before { background: var(--brass); color: var(--surface); }
+li:not(:last-child)::after { content: ""; position: absolute; left: 12.5px; top: 26px; bottom: 0; width: 1px; background: var(--line); }
+li span { min-width: 0; }
+li b { font-weight: 600; }
+.code { margin-left: auto; font-family: var(--mono); font-size: 12px; color: var(--brass); text-decoration: none; align-self: center; }
+.code:hover, .code:focus-visible { text-decoration: underline; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.btn { background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+.note { color: var(--muted); font-size: 13.5px; }
+code { font-family: var(--mono); font-size: 12.5px; background: var(--navy-soft); padding: 1px 6px; border-radius: 4px; }
+.tools { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px; border-top: 1px solid var(--line); padding-top: 14px; }
+.result { margin: 0; font-size: 14px; }
+.result strong { color: var(--brass); font-weight: 600; }
+footer { color: var(--muted); font-size: 13.5px; max-width: 68ch; }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Property management &amp; transaction coordination</div>
+    <h1>Automation workflows I build for real estate teams</h1>
+    <p>Six sample workflows that cut manual follow-up for property managers and agents. Each one starts from a real trigger in your day, runs the repetitive steps automatically, and leaves the judgment calls to your team.</p>
+    <div class="actions"><a class="btn" href="REPO_URL">View the code on GitHub</a><span class="note">Every workflow runs on sample data with one command: <code>python run_all.py</code></span></div>
+    <div class="legend"><span class="chip pm">Property management</span><span class="chip">Transaction coordination</span></div>
+  </header>
+
+  <div class="grid">
+    <article>
+      <div class="top"><h2>Work order triage and vendor follow-up</h2><span class="chip pm">PM</span></div>
+      <p class="problem">Maintenance requests sit unassigned and vendors go quiet until a tenant complains.</p>
+      <ol>
+        <li><span><b>Trigger:</b> tenant submits a maintenance request in AppFolio or Buildium</span></li>
+        <li><span>AI reads the request and tags it emergency, urgent, or routine by trade</span></li>
+        <li><span>Work order is assigned to the preferred vendor for that trade and property</span></li>
+        <li><span>Python script checks open orders daily and emails vendors who haven't updated</span></li>
+        <li><span>Tenant gets status updates; manager sees a short daily list of stuck orders</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> no work order goes untouched, and emergencies reach a human first.</p>
+      <div class="tools"><span class="chip">AppFolio</span><span class="chip">Python</span><span class="chip">Claude API</span><span class="chip">Gmail</span><a class="code" href="REPO_URL/blob/main/workflows/work_order_triage.py">View code</a></div>
+    </article>
+
+    <article>
+      <div class="top"><h2>Delinquency and five-day notices</h2><span class="chip pm">PM</span></div>
+      <p class="problem">Late rent tracking and notice prep eat the first week of every month.</p>
+      <ol>
+        <li><span><b>Trigger:</b> grace period ends on the scheduled date each month</span></li>
+        <li><span>Delinquency report is pulled and balances are checked against the tenant ledger</span></li>
+        <li><span>Friendly reminder goes out first by email and SMS</span></li>
+        <li><span>Five-day notices are generated from a template with tenant, unit, and amount filled in</span></li>
+        <li><span>Manager approves the batch; serving and dates are logged per tenant</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> notices go out on time and every one is documented for court if needed.</p>
+      <div class="tools"><span class="chip">Buildium</span><span class="chip">Make.com</span><span class="chip">Google Docs</span><a class="code" href="REPO_URL/blob/main/workflows/delinquency_notices.py">View code</a></div>
+    </article>
+
+    <article>
+      <div class="top"><h2>Month-end owner statements</h2><span class="chip pm">PM</span></div>
+      <p class="problem">Statements go out late because reconciliation errors surface at the last minute.</p>
+      <ol>
+        <li><span><b>Trigger:</b> month-end close begins</span></li>
+        <li><span>Bank feed is checked against the ledger; unmatched items are listed</span></li>
+        <li><span>Script flags duplicate entries, miscoded expenses, and unexplained balances</span></li>
+        <li><span>After review, owner statements and management fees are generated</span></li>
+        <li><span>Each owner receives a statement packet with a short plain-English summary</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> errors are caught before owners see them, not after.</p>
+      <div class="tools"><span class="chip">AppFolio</span><span class="chip">QuickBooks Online</span><span class="chip">Python</span><span class="chip">Excel</span><a class="code" href="REPO_URL/blob/main/workflows/owner_statements.py">View code</a></div>
+    </article>
+
+    <article>
+      <div class="top"><h2>AI voice agent for inbound calls</h2><span class="chip pm">PM</span></div>
+      <p class="problem">Calls after hours or during showings go to voicemail and leads go cold.</p>
+      <ol>
+        <li><span><b>Trigger:</b> a prospect, tenant, or owner calls the office line</span></li>
+        <li><span>Voice agent answers, identifies the caller type, and handles common questions</span></li>
+        <li><span>Prospects are pre-qualified and offered a showing time</span></li>
+        <li><span>Maintenance emergencies are routed to the on-call number immediately</span></li>
+        <li><span>Call summary and transcript land in the CRM with a follow-up task</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> every call is answered and logged, day or night.</p>
+      <div class="tools"><span class="chip">AI voice agent</span><span class="chip">GoHighLevel</span><span class="chip">Follow Up Boss</span><a class="code" href="REPO_URL/blob/main/workflows/call_router.py">View code</a></div>
+    </article>
+
+    <article>
+      <div class="top"><h2>Contract to close timeline</h2><span class="chip">TC</span></div>
+      <p class="problem">Key dates live inside PDFs and get re-typed by hand for every file.</p>
+      <ol>
+        <li><span><b>Trigger:</b> executed contract arrives in Dotloop or by email</span></li>
+        <li><span>AI extracts parties, price, and every contract deadline</span></li>
+        <li><span>TC reviews the extracted dates, then they become calendar events with reminders</span></li>
+        <li><span>Intro emails go to buyer, seller, lender, and title with the timeline attached</span></li>
+        <li><span>Reminders fire before inspection, appraisal, financing, and closing deadlines</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> the file is fully set up the day it goes under contract.</p>
+      <div class="tools"><span class="chip">Dotloop</span><span class="chip">Relay.app</span><span class="chip">Claude API</span><span class="chip">Google Calendar</span><a class="code" href="REPO_URL/blob/main/workflows/contract_timeline.py">View code</a></div>
+    </article>
+
+    <article>
+      <div class="top"><h2>Instant lead response</h2><span class="chip">TC</span></div>
+      <p class="problem">Website leads wait hours for a reply and book with whoever answers first.</p>
+      <ol>
+        <li><span><b>Trigger:</b> someone submits a form on the agent's website</span></li>
+        <li><span>Make.com creates or updates the contact in GoHighLevel with source tags</span></li>
+        <li><span>Personalized text and email go out within a minute</span></li>
+        <li><span>Agent gets a task with the lead's details and a booking link</span></li>
+        <li><span>Unresponsive leads move into a nurture sequence automatically</span></li>
+      </ol>
+      <p class="result"><strong>Outcome:</strong> every lead hears back fast, even when the agent is in a showing.</p>
+      <div class="tools"><span class="chip">Make.com</span><span class="chip">GoHighLevel</span><span class="chip">Website forms</span><a class="code" href="REPO_URL/blob/main/workflows/lead_response.py">View code</a></div>
+    </article>
+  </div>
+
+  <footer>Sample workflows by Muhammad Musab Shahzad. Each can be adapted to your software stack, whether you run AppFolio, Buildium, Yardi, KW Command, or Dotloop.</footer>
+</div>
+
+</body>
+</html>

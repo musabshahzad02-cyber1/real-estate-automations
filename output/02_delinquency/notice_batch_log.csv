@@ -1,0 +1,5 @@
+tenant_id,tenant,property,unit,rent_due,late_fees_due,total_balance,action,manager_approved,served_date,service_method
+T-02,Luis Ortega,Maple Court,4A,575.00,50.00,625.00,five-day notice + reminder,,,
+T-03,Priya Nair,Elm Street Duplex,B,1700.00,50.00,1750.00,five-day notice + reminder,,,
+T-04,Marcus Bell,Riverside Lofts,305,0.00,50.00,50.00,reminder only (fees),,,
+T-05,Grace Kim,Riverside Lofts,112,1325.00,50.00,1375.00,five-day notice + reminder,,,
