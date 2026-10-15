@@ -13,7 +13,7 @@ the built-in rules.
 ## Quick start
 
 ```bash
-git clone REPO_URL.git
+git clone https://github.com/musabshahzad02-cyber1/real-estate-automations.git
 cd real-estate-automations
 python run_all.py
 ```
